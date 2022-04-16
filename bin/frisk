@@ -1,0 +1,40 @@
+#! /usr/bin/env node
+
+require = require('esm')(module);
+const { program } = require('commander');
+var clui = require('clui'),
+    Spinner = clui.Spinner;
+
+program
+    .name('frisk')
+    .description('A CLI to find text in files')
+    .version('1.0.0');
+
+program
+    .argument('<dir>', 'Directory')
+    .argument('<keyword>', 'Search keyword')
+    .option('-r, --recursively', 'Recursively')
+    .option('-ex, --exclude <char...>', 'Exclude files or directories')
+    .option('-e, --encoding <char>', 'Encoding');
+
+program.parse();
+
+
+var spinner = new Spinner('Scaning...')
+spinner.start();
+
+require('../src/cli')
+    .cli(program.args, program.opts())
+    .then(files => {
+        spinner.stop();
+        if (files.length > 0) {
+            console.table(files);
+        } else {
+            console.log('Nothing found!');
+        }
+    })
+    .catch(e => {
+        spinner.stop();
+        console.log(e.message);
+    });
+

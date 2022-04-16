@@ -1,0 +1,28 @@
+{
+  "name": "@mironante/frisk",
+  "version": "1.0.0",
+  "description": "A CLI to find text in directory",
+  "main": "src/index.js",
+  "bin": {
+    "@mironante/frisk": "bin/frisk",
+    "frisk": "bin/frisk"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "frisk"
+  ],
+  "author": "Nazar Shmanov",
+  "license": "MIT",
+  "dependencies": {
+    "clui": "^0.3.6",
+    "commander": "^9.2.0",
+    "esm": "^3.2.25",
+    "iconv-lite": "^0.6.3"
+  }
+}
