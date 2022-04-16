@@ -1,6 +1,6 @@
 {
   "name": "@mironante/frisk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI tool to search for text in a folder",
   "main": "src/index.js",
   "bin": {
