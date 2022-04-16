@@ -7,7 +7,7 @@ var clui = require('clui'),
 
 program
     .name('frisk')
-    .description('A CLI to find text in files')
+    .description('CLI tool to search for text in a folder')
     .version('1.0.0');
 
 program

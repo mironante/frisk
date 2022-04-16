@@ -1,7 +1,7 @@
 {
   "name": "@mironante/frisk",
   "version": "1.0.1",
-  "description": "A CLI to find text in directory",
+  "description": "CLI tool to search for text in a folder",
   "main": "src/index.js",
   "bin": {
     "@mironante/frisk": "bin/frisk",

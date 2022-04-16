@@ -29,7 +29,7 @@ frisk <dir> <keyword> [options]
 |--version|-V|Output the version number|
 |--recursively|-r|Search recursively|
 |--exclude <char...>|-ex|Exclude files or directories|
-|--encoding <char>|-e|Encoding|
+|--encoding <char>|-e|Supported encodings (https://github.com/ashtuchkin/iconv-lite/wiki/Supported-Encodings)|
 |--help|-h|Display help for command|
 
 ### Example:
